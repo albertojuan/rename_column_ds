@@ -1,0 +1,24 @@
+DESCRIPTION >
+	Round Time Down to minute
+
+
+NODE signal_minute_0
+SQL >
+
+    SELECT 
+        toStartOfMinute(time) AS time,
+        network,
+        asset,
+        metric,
+        value,
+        unit,
+        job_id,
+        ingested_at
+    FROM signals
+
+TYPE materialized
+DATASOURCE signal_minute_mv
+ENGINE "MergeTree"
+ENGINE_PARTITION_KEY "toYYYYMM(time)"
+ENGINE_SORTING_KEY "time, metric, unit, job_id"
+
