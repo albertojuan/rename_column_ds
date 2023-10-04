@@ -1,0 +1,8 @@
+TOKEN "signal_minute_mv_pipe_2321_endpoint_read_3802" READ
+
+NODE signal_minute_api
+SQL >
+
+    SELECT time, asset, value FROM signal_minute_mv
+
+
