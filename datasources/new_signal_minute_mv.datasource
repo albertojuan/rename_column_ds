@@ -1,0 +1,15 @@
+# Data Source created from Pipe 'signal_minute'
+
+SCHEMA >
+    `time` DateTime,
+    `network` String,
+    `signal` String,
+    `metric` String,
+    `value` Float32,
+    `unit` String,
+    `job_id` String,
+    `ingested_at` DateTime
+
+ENGINE "MergeTree"
+ENGINE_PARTITION_KEY "toYYYYMM(time)"
+ENGINE_SORTING_KEY "time, metric, unit, job_id"
