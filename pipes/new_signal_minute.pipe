@@ -19,6 +19,4 @@ SQL >
 
 TYPE materialized
 DATASOURCE new_signal_minute_mv
-ENGINE "MergeTree"
-ENGINE_PARTITION_KEY "toYYYYMM(time)"
-ENGINE_SORTING_KEY "time, metric, unit, job_id"
+
