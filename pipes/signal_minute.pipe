@@ -8,17 +8,14 @@ SQL >
     SELECT 
         toStartOfMinute(time) AS time,
         network,
-        asset,
+        coalesce(NULLIf(signal, ''), asset) AS asset,
         metric,
         value,
         unit,
         job_id,
         ingested_at
     FROM signals
+    WHERE asset != ''
 
 TYPE materialized
 DATASOURCE signal_minute_mv
-ENGINE "MergeTree"
-ENGINE_PARTITION_KEY "toYYYYMM(time)"
-ENGINE_SORTING_KEY "time, metric, unit, job_id"
-

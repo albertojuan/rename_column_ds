@@ -1,16 +1,6 @@
 TOKEN "append_signals" APPEND
 
 DESCRIPTION >
-    Like this:
-
-`time` DateTime `json:$.time` ,
-`network` String `json:$.network` ,
-`asset` String `json:$.asset` ,
-`metric` String `json:$.metric` ,
-`value` Float32 `json:$.value` ,
-`unit` String `json:$.unit` ,
-`job_id` String `json:$.job_id` ,
-`ingested_at` DateTime `json:$.ingested_at
 
 SCHEMA >
     `time` DateTime `json:$.time`,
@@ -20,7 +10,8 @@ SCHEMA >
     `value` Float32 `json:$.value`,
     `unit` String `json:$.unit`,
     `job_id` String `json:$.job_id`,
-    `ingested_at` DateTime `json:$.ingested_at`
+    `ingested_at` DateTime `json:$.ingested_at`,
+    `signal` Nullable(String) `json:$.signal`
 
 ENGINE "MergeTree"
 ENGINE_PARTITION_KEY "toYear(time)"

@@ -1,0 +1,12 @@
+{"time":"2023-10-04 12:01:00","network":"TestNetwork","asset":"Asset1","metric":"temperature","value":23.5,"unit":"C","job_id":"Job1","ingested_at":"2023-10-04 12:02:00"}
+{"time":"2023-10-04 12:02:00","network":"TestNetwork","asset":"Asset2","metric":"humidity","value":60.2,"unit":"%","job_id":"Job2","ingested_at":"2023-10-04 12:03:00"}
+{"time":"2023-10-04 12:03:00","network":"TestNetwork","asset":"Asset3","metric":"pressure","value":1013.1,"unit":"hPa","job_id":"Job3","ingested_at":"2023-10-04 12:04:00"}
+{"time":"2023-10-04 12:04:00","network":"TestNetwork","asset":"Asset1","metric":"voltage","value":220,"unit":"V","job_id":"Job4","ingested_at":"2023-10-04 12:05:00"}
+{"time":"2023-10-04 12:05:00","network":"TestNetwork","asset":"Asset4","metric":"current","value":10,"unit":"A","job_id":"Job5","ingested_at":"2023-10-04 12:06:00"}
+{"time":"2023-10-04 12:06:00","network":"TestNetwork","asset":"Asset1","metric":"temperature","value":22.8,"unit":"C","job_id":"Job6","ingested_at":"2023-10-04 12:07:00"}
+{"time":"2023-10-04 12:07:00","network":"TestNetwork","asset":"Asset2","metric":"humidity","value":61.5,"unit":"%","job_id":"Job7","ingested_at":"2023-10-04 12:08:00"}
+{"time":"2023-10-04 12:08:00","network":"TestNetwork","asset":"Asset4","metric":"pressure","value":1012.9,"unit":"hPa","job_id":"Job8","ingested_at":"2023-10-04 12:09:00"}
+{"time":"2023-10-04 12:09:00","network":"TestNetwork","asset":"Asset3","metric":"voltage","value":221,"unit":"V","job_id":"Job9","ingested_at":"2023-10-04 12:10:00"}
+{"time":"2023-10-04 12:10:00","network":"TestNetwork","asset":"","metric":"current","value":9.5,"unit":"A","job_id":"Job10","ingested_at":"2023-10-04 12:11:00","signal":"Asset1"}
+{"time":"2023-10-04 12:11:00","network":"TestNetwork2","asset":"","metric":"current","value":9.5,"unit":"A","job_id":"Job10","ingested_at":"2023-10-04 12:11:00","signal":"Asset4"}
+{"time":"2023-10-04 12:12:00","network":"TestNetwork","asset":"","metric":"wrong_empty_signal","value":9.5,"unit":"A","job_id":"Job10","ingested_at":"2023-10-04 12:11:00"}
