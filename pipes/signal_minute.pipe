@@ -8,7 +8,7 @@ SQL >
     SELECT 
         toStartOfMinute(time) AS time,
         network,
-        if (signal = '', asset, signal) AS asset,
+        coalesce(NULLIf(signal, ''), asset) AS asset,
         metric,
         value,
         unit,

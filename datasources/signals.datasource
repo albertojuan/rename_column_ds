@@ -11,7 +11,7 @@ SCHEMA >
     `unit` String `json:$.unit`,
     `job_id` String `json:$.job_id`,
     `ingested_at` DateTime `json:$.ingested_at`,
-    `signal` String `json:$.signal` DEFAULT ''
+    `signal` Nullable(String) `json:$.signal`
 
 ENGINE "MergeTree"
 ENGINE_PARTITION_KEY "toYear(time)"
