@@ -8,4 +8,6 @@
 2023-10-04 12:08:00,TestNetwork,,pressure,1012.9,hPa,Job8,2023-10-04 12:09:00,Asset1
 2023-10-04 12:09:00,TestNetwork,Asset3,voltage,221,V,Job9,2023-10-04 12:10:00,
 2023-10-04 12:10:00,TestNetwork,,current,9.5,A,Job10,2023-10-04 12:11:00,Asset1
-2023-10-04 12:10:00,TestNetwork,,wrong_empty_signal,9.5,A,Job10,2023-10-04 12:11:00,
+2023-10-04 12:11:00,TestNetwork2,,current,9.5,A,Job10,2023-10-04 12:11:00,Asset4
+2023-10-04 12:12:00,TestNetwork,,wrong_empty_signal,9.5,A,Job10,2023-10-04 12:11:00,
+

@@ -1,1 +1,1 @@
-tb pipe data signal_minute_endpoint --network TestNetwork
+tb pipe data signal_minute_endpoint --network TestNetwork --format CSV

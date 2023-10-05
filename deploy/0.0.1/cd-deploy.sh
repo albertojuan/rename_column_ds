@@ -1,2 +1,1 @@
-tb deploy --yes
-tb deploy --yes
+tb deploy --yes --populate --fixtures --wait

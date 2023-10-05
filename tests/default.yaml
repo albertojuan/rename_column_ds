@@ -2,23 +2,13 @@
     max_bytes_read: null
     max_time: null
     sql: |
-        SELECT 1 FROM
-        (
-          SELECT network
-            FROM signal_minute_endpoint
-            GROUP BY network
-          HAVING network = 'TestNetwork' and count() == 10
-        ) 
-        HAVING count() = 0
-
-- another-expression-same-test:
-    max_bytes_read: null
-    max_time: null
-    sql: |
       SELECT 1 as check
       FROM signal_minute_endpoint
-      WHERE network = 'TestNetwork'
       HAVING count() != 10
+    pipe:
+      name: signal_minute_endpoint
+      params:
+        network: 'TestNetwork'
 
 - asset-not-empty:
     max_bytes_read: null
@@ -27,6 +17,10 @@
         SELECT asset
         FROM signal_minute_endpoint
         WHERE asset = ''
+    pipe:
+      name: signal_minute_endpoint
+      params:
+        network: 'TestNetwork'
 
 
 
